@@ -1,5 +1,3 @@
-import sys
-
 import tweepy
 
 api_key = "api_key"
