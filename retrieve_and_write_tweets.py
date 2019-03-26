@@ -7,7 +7,7 @@ access_secret = "access_secret"
 
 def get_tweets(username, count):
 
-	#http://tweepy.readthedocs.org/en/v3.1.0/getting_started.html#api
+	#http://tweepy.readthedocs.org/en/v3.7.0/getting_started.html#api
 	#Tweepy is a little easier then twitter api docs :)
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_key, access_secret)
