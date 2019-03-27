@@ -13,14 +13,16 @@ def get_tweets(username, count):
 	auth.set_access_token(access_key, access_secret)
 	api = tweepy.API(auth)
 
+	val = int(count)
+
 	#get tweets & write to file as you go (memory consideration)
-	#outfile = username + "_tweets.txt"
-	#file = open(outfile, "w+")
+	outfile = username + "_tweets.txt"
+	file = open(outfile, "w")
 
-	for tweet in tweepy.Cursor(api.home_timeline, id=username).items(count):
-		print(tweet.text)
+	for tweet in tweepy.Cursor(api.user_timeline, id=username).items(val):
+		file.write(tweet.text)
 
-	#file.close()
+	file.close()
 
 
 user = input("What user do you want tweets for?: ")

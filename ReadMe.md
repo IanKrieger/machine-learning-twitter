@@ -23,6 +23,13 @@ pip3 install tweepy
 pip3 install textgenrnn
 ```
 
+### Examples
+
+```
+See twitter_tweets.txt as an example file ouput
+```
+
+
 ## Authors
 
 * **Ian Krieger** - *Initial work* - https://github.com/IanKrieger
