@@ -1,5 +1,5 @@
 # Using Tweets to feed an ML model
-This project contains three files
+This project contains three files. One for retrieving the weets, one for training a machine learning model, and one for spitting out results of training the machine learning model.
 
 ## Getting Started
 
