@@ -20,7 +20,7 @@ def get_tweets(username, count):
 	file = open(outfile, "w")
 
 	for tweet in tweepy.Cursor(api.user_timeline, id=username).items(val):
-		file.write(tweet.text)
+		file.write(tweet.text + "\n")
 
 	file.close()
 
